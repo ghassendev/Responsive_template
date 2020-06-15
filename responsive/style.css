@@ -1,0 +1,203 @@
+:root{
+--primary:rgb(209, 69, 18);
+--dark:rgb(46, 45, 49);
+
+}
+body{
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.bar{
+
+background-color: var(--dark);
+display: grid;
+grid-template-columns: repeat(1,2fr 1fr);
+padding-left: 3em;
+padding-right:2em ;
+border-bottom: var(--primary) solid;
+}
+h{
+    color: var(--primary);
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(1,1fr 1fr 1fr);
+    list-style:none;
+    
+    
+}
+li{
+    margin-left: 2em;
+    padding-top:1em;
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.main{
+background-image: url(img/photo-of-designer-creating-a-website.jpeg);
+height:300px;
+width:95%;
+text-align: center;
+color: black;
+padding-top: 5em;
+padding-left: 2em;
+padding-right: 2em;
+
+
+}
+.main > h1{
+font-size: 38px;
+font-weight: bolder;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+.umain{
+
+background-color: var(--dark);
+display:grid;
+grid-template-columns: repeat(2,1fr);
+justify-items: center;
+height: 4em;
+
+}
+
+.umain  h1{
+padding-top: -1em;
+
+
+
+
+
+}
+form input[type="email"]{
+    margin-top: 2em;
+
+}
+form input[type="submit"]{
+    background-color:var(--primary) ;
+    border: var(--primary);
+    height: 1.6em;
+    color: white;
+
+}
+.spec{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+color: black;
+margin-top: 2em;
+justify-items: center;
+grid-gap: 1em;
+margin-left: 5em;
+text-align: center;
+}
+
+.spec  img{
+    width: 100px;
+    height: 115px;
+    align-items: center;
+    
+}
+footer{
+
+background-color:var(--primary);
+text-align: center;
+height: 2.6em;
+padding-top: 1em;
+
+
+
+}
+a:hover{
+color:green ;
+
+}
+
+
+
+@media (max-width:700px){
+
+    .bar{
+
+        text-align: center;
+        background-color: var(--dark);
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+        padding-left: 0em;
+        padding-right:2em ;
+        justify-items: center;
+        
+        }
+ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style:none;
+    justify-items: center;
+    
+    
+}
+.umain{
+
+    background-color: var(--dark);
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    height: 9em;
+    
+    }
+    .spec{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: black;
+        margin-top: 2em;
+        justify-items: center;
+        grid-gap: 1em;
+        margin-left: 5em;
+        text-align: center;
+        }
+
+        .main{
+            background-image: url(img/photo-of-designer-creating-a-website.jpeg);
+            height:300px;
+            width:86%;
+            text-align: center;
+            color: black;
+            padding-top: 5em;
+            padding-left: 2em;
+            padding-right: 2em;
+            
+            
+            }
+            .umain{
+
+                background-color: var(--dark);
+                display:grid;
+                grid-template-columns: repeat(1,1fr);
+                justify-items: center;
+                height: 15em;
+                
+                }
+                .umain > form{
+                    display:flex ;
+                    flex-direction: column;
+                    
+                }
+
+                form input[type="email"],input[type="submit"]{
+                    margin-top:1em;
+                    width: 250px;
+                    height: 30px;
+                
+                }
+
+
+
+        }
